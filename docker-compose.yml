@@ -3,7 +3,7 @@ services:
     build:
       context: .
       dockerfile: Dockerfile
-    container_name: palladium-web
+    container_name: bitcoinpurple-web
     restart: unless-stopped
     ports:
       - "80:80"
@@ -12,10 +12,10 @@ services:
       # Persist Caddy data (certificates, etc.)
       - caddy_data:/data
       - caddy_config:/config
-#    environment:
+    environment:
       # Optional: set CADDY_ environment variables here
-      # - CADDY_HOST=palladiumblockchain.net
-      # - CADDY_EMAIL=admin@palladiumblockchain.net
+      - CADDY_HOST=bitcoinpurpleblockchain.com
+      - CADDY_EMAIL=admin@bitcoinpurpleblockchain.com
     # If running behind a firewall/NAT, ensure port 443 is reachable from the Internet
 
 volumes:

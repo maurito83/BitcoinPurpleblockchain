@@ -3,7 +3,7 @@
 	# email you@example.com
 }
 
-bitcoinpurpleblockchain.net {
+bitcoinpurpleblockchain.com {
 	root * /srv
 	file_server
 
@@ -22,6 +22,6 @@ bitcoinpurpleblockchain.net {
 	# Handle .well-known and static assets normally (root covers everything)
 }
 
-www.bitcoinpurpleblockchain.net {
-	redir https://bitcoinpurpleblockchain.net{uri}
+www.bitcoinpurpleblockchain.com {
+	redir https://bitcoinpurpleblockchain.com{uri}
 }
