@@ -1,0 +1,14 @@
+# dockerfile.test
+FROM python:3.12-alpine
+
+# Imposta la cartella di lavoro
+WORKDIR /srv
+
+# Copia i file del sito dentro il container
+COPY . /srv
+
+# Espone la porta 8000
+EXPOSE 8000
+
+# Avvia un semplice server HTTP su 0.0.0.0:8000
+CMD ["python", "-m", "http.server", "8000", "--bind", "0.0.0.0"]
