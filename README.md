@@ -1,6 +1,6 @@
 # Bitcoin Purple Website
 
-Updated and improved version of the Bitcoin Purple website.
+Updated and improved version of the Bitcoin Purple website: https://bitcoinpurpleblockchain.com
 
 ## 📋 Description
 
